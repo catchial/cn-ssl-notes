@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>857直播 | 日常查询与延伸阅读</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #faf8f5;
+      color: #2e2b29;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 0 auto;
+      background: #fffcf9;
+      border-radius: 28px;
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.05);
+      padding: 2.8rem 2rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+      color: #1f1c19;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin: 2.8rem 0 1rem 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #e7e1da;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin: 1.6rem 0 0.6rem 0;
+    }
+
+    .hero-tagline {
+      font-size: 1.05rem;
+      color: #6b6360;
+      max-width: 680px;
+      margin: 0.4rem 0 1.8rem 0;
+    }
+
+    .hero-highlight {
+      background: #f2ede7;
+      border-left: 4px solid #bc9f8b;
+      padding: 1.2rem 1.6rem;
+      border-radius: 0 10px 10px 0;
+      margin: 1.8rem 0 2.2rem 0;
+      font-size: 1rem;
+    }
+
+    .hero-highlight a {
+      color: #7a5e4a;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    .hero-highlight a:hover {
+      color: #4f3c2e;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+      margin: 1.8rem 0;
+    }
+
+    .info-card {
+      background: #f8f5f2;
+      padding: 1.4rem 1.6rem;
+      border-radius: 14px;
+      border: 1px solid #ece6df;
+    }
+
+    .info-card h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      color: #3c3632;
+    }
+
+    .info-card p {
+      font-size: 0.96rem;
+      color: #4d4743;
+    }
+
+    .callout-box {
+      background: #f0ebe4;
+      border-radius: 14px;
+      padding: 1.4rem 1.8rem;
+      margin: 2rem 0;
+      border-left: 5px solid #a78b78;
+      font-size: 0.98rem;
+    }
+
+    .callout-box strong {
+      color: #3d322b;
+    }
+
+    .faq-item {
+      margin: 1rem 0;
+      padding-left: 0.2rem;
+    }
+
+    .faq-question {
+      font-weight: 600;
+      color: #3c3632;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-answer {
+      color: #5b534e;
+      padding-left: 0.8rem;
+      border-left: 2px solid #d6cdc3;
+      margin-top: 0.1rem;
+      font-size: 0.96rem;
+    }
+
+    .faq-answer a {
+      color: #7a5e4a;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .foot-links {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2dbd3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      font-size: 0.9rem;
+      color: #6b6360;
+    }
+
+    .foot-links a {
+      color: #5d4c3f;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      margin: 0 0.5rem 0 0;
+    }
+
+    .foot-links a:hover {
+      color: #2b221d;
+    }
+
+    .foot-note {
+      background: #f2ede7;
+      padding: 0.8rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      color: #5a514b;
+      margin-top: 1.8rem;
+      display: inline-block;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .page {
+        padding: 1.8rem 1.2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      .foot-links {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Hero -->
+  <h1>日常查询 · 对照 · 延伸</h1>
+  <div class="hero-tagline">
+    围绕 <strong>857直播</strong> 的常见信息需求，整理一份可反复查阅的参考页。内容保持客观，侧重实用与背景。
+  </div>
+
+  <div class="hero-highlight">
+    日常访问：<a href="https://cn-ssl-857.com">857直播</a> 提供持续更新的观看方式与频道索引，适合用于快速对照或内容回溯。
+  </div>
+
+  <!-- 优势区 / 特点 -->
+  <h2>信息组织与可用性</h2>
+  <div class="grid-2">
+    <div class="info-card">
+      <h3>频道对照</h3>
+      <p>不同时段、不同分类的直播入口集中陈列，减少逐条搜索的步骤。支持按关键词筛选或按热度排序，便于横向比较。</p>
+    </div>
+    <div class="info-card">
+      <h3>延伸阅读</h3>
+      <p>页面内嵌入背景介绍、直播主题说明与常见术语提示。不依赖第三方平台，在同一个标签页内即可完成上下文查询。</p>
+    </div>
+    <div class="info-card">
+      <h3>轻量结构</h3>
+      <p>无多余跳转弹窗，主体内容以文字卡片和折叠区组织。加载速度优先，适配移动端与桌面端不同视口。</p>
+    </div>
+    <div class="info-card">
+      <h3>更新记录</h3>
+      <p>频道列表与说明文本随内容调整同步更新，避免信息滞后。变更部分以标注形式呈现，方便回头查阅。</p>
+    </div>
+  </div>
+
+  <!-- 说明区 -->
+  <h2>使用场景与说明</h2>
+  <p>当你需要快速了解某个直播间的主题背景、核对播出时间或查看以往内容摘要时，<a href="https://cn-ssl-857.com">857直播</a> 的页面结构将对照信息与主内容并列展示，方便同时浏览。</p>
+  <p>部分页面设有“延伸注释”区域，用于补充名词解释、数据来源或相关推荐，减少来回切换标签页的麻烦。所有引用均标明出处或标注为经验整理，不做未经验证的断言。</p>
+
+  <div class="callout-box">
+    <strong>提示：</strong> 如果遇到页面内容显示异常或链接失效，可先清除浏览器缓存或更换网络环境后重试。部分直播间的存档回放功能可能受平台策略影响，以实际页面为准。
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <h2>常见问题 · 摘要</h2>
+  <div class="faq-item">
+    <span class="faq-question">如何快速找到正在直播的频道？</span>
+    <div class="faq-answer">首页顶部设有“当前直播”区域，按剩余时长或热度排序。也可直接使用搜索框输入关键词（如游戏名称或主播昵称）。</div>
+  </div>
+  <div class="faq-item">
+    <span class="faq-question">页面上的“对照模式”是什么意思？</span>
+    <div class="faq-answer">部分列表页右侧或底部附有对照卡片，将两个直播间的信息（如标题、观看人数、开播时长）并列显示，方便对比选择。具体位置因页面布局而异。</div>
+  </div>
+  <div class="faq-item">
+    <span class="faq-question">内容更新频率如何？</span>
+    <div class="faq-answer">推荐频道与热门回放每日刷新，说明性文本（如术语、常见问题）会随直播内容变化阶段性修订。可在页面底部查看最近更新日期。</div>
+  </div>
+  <div class="faq-item">
+    <span class="faq-question">是否有独立的延伸阅读版块？</span>
+    <div class="faq-answer">有。每个直播详情页下方如果存在“相关背景”或“延伸阅读”区域，会提供主题百科、历史记录或同类推荐，均以摘要形式呈现。更多内容可通过 <a href="https://cn-ssl-857.com">857直播</a> 对应页面查看。</div>
+  </div>
+
+  <!-- 底部链接 -->
+  <div class="foot-links">
+    <div>
+      <a href="https://cn-ssl-857.com">857直播</a> · 日常查询版
+    </div>
+    <div>
+      <span>内容仅供对照参考</span>
+    </div>
+  </div>
+  <div class="foot-note">
+    本页为独立介绍页，所述功能以实际站点表现为准。最近更新：2025年4月。
+  </div>
+
+</div>
+</body>
+</html>
